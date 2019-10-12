@@ -14,7 +14,7 @@ KnowYou也支持情感计算（Affective Computing），更好捕获用户的情
 
 项目整体架构如下图：
 
-![](D:/github/KnowYouAI/doc/framwork.png)
+![](doc/framwork.png)
 
 语料数据来源 [github](https://github.com/brightmart/nlp_chinese_corpus) 和思知
 
@@ -34,7 +34,7 @@ KnowYou也支持情感计算（Affective Computing），更好捕获用户的情
 
   论文为AI设立了一个和用户第一次post的内容相关的target，然后再对话过程中，引导话题向target上靠，使得对话的上下文的选择都在某个可控范围之内。相比随便聊，对话要更加平滑自然。
 
-  ![](D:\github\KnowYouAI\doc\paper.png)
+  ![](doc/paper.png)
 
   ​										（图来自【1】Target-Guided Open-Domain Conversation）
 
@@ -62,9 +62,9 @@ KnowYou也支持情感计算（Affective Computing），更好捕获用户的情
 
 以web平台的交互为例（背景用的必应的，所以会变）
 
-<img src="D:/github/KnowYouAI/doc/1.png"  height=500px width=400px>
+<img src="doc/1.png"  height=500px width=400px>
 
-<img src="D:/github/KnowYouAI/doc/2.png"  height=500px width=400px>
+<img src="doc/2.png"  height=500px width=400px>
 
 
 
@@ -147,7 +147,7 @@ config.py是面向开发者的配置
 
 2.打开build.conf，配置你的个性ai
 
-![](D:/github/KnowYouAI/doc/agent_profile.png)
+![](doc/agent_profile.png)
 
 ​	emmm……看字段名字应该就知道是什么意思了。
 
@@ -181,7 +181,7 @@ config.py是面向开发者的配置
 
 如果你也认同我的开发理念和本项目，能资助我几个小钱钱就更好了，金额不限，谢谢
 
-![](D:/github/KnowYouAI/doc/pay.jpg)
+![](doc/pay.jpg)
 
 如有问题和技术交流，请开issue。
 
