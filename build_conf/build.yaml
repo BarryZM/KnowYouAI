@@ -1,0 +1,15 @@
+user_id: "test" #"MASTER"
+agent_profile:
+  name: "AI" # AI名字
+  your_name: "主人" # 对你的称呼
+  like_food:
+    - "臭豆腐"
+    - "米饭"
+    - "榴莲"
+  age: 18
+
+chrome_plugin:
+  image_ico: "default"
+  host: "http://localhost" # 请求地址，http/https不可缺省
+
+

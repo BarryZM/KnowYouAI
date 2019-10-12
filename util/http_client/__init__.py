@@ -1,0 +1,1 @@
+from .weibo import WeiBo

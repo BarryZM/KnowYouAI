@@ -1,0 +1,10 @@
+gensim==3.7.1
+jieba==0.39
+numpy==1.17.0
+requests==2.22.0
+torch==0.4.0
+py2neo==4.3.0
+Flask==1.0.2
+wechatpy==1.8.3
+Pillow==6.2.0
+PyYAML==5.1.2

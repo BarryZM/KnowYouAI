@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TeachMe</title>
+    <script type="text/javascript" src="{{url_for('static',
+      filename='js/jquery-2.2.0.min.js')}}"></script>
+</head>
+<body>
+Taach Me
+<br>
+<form>
+    {% for item in words %}
+    <br>
+    {{ item[0] }}.Do you like:<span id="word_{{ item[0] }}">{{ item[1] }}</span>
+    <br>
+    <input type="radio" name="like_{{ item[0] }}" value="like">like
+    <br>
+    <input type="radio" name="like_{{ item[0] }}" value="normal"> normal
+    <br>
+    <input type="radio" name="like_{{ item[0] }}" value="unlike">unlike
+    <br>
+    {% endfor %}
+    <br>
+    Total item:<span id="total">{{ size }}</span>
+    <br>
+    <br>
+    <button type="button" id="submit">Submit</button>
+</form>
+</body>
+<script>
+    var submit_result = function(data){
+        request_url = "{{ host }}/submit";
+        $.ajax({
+          url:request_url,
+          type: "POST",
+          data: JSON.stringify({
+                "user_id":"{{ user_id }}",
+                "attitude":data// 注意不要在此行增加逗号
+          }),
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          success:function(data,stata){
+               //如果data是json，自动data编程了json
+                alert("提交成功")
+          },
+          error:function(XMLHttpRequest, textStatus, errorThrown) {
+                // XMLHttpRequest是一个obj
+               reason = JSON.stringify(XMLHttpRequest)
+               console.log(reason)
+               alert("提交失败，查看控制台")
+          }
+        })
+    }
+    $('#submit').click(function(){
+        var total = $('#total').text()
+        total = parseInt(total)
+        var data = {}
+        for( var i = 1;i<=total;i++){
+            var word = $('#word_'+i).text()
+            var name = 'like_' + i;
+            //var check = $("input[name='rd']:checked").val()
+            var check = $("input[name="+name+"]:checked").val()
+            if(check){
+                data[word] = check;
+            }
+
+        }
+        submit_result(JSON.stringify(data))
+    });
+
+</script>
+</html>

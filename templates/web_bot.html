@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="shortcut ico" href="{{url_for('static',
+      filename='img/ico.png')}}">
+    <title>知你AI</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',
+      filename='css/index.css')}}">
+    <script type="text/javascript" src="{{url_for('static',
+      filename='js/jquery-2.2.0.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static',
+      filename='js/upload_file.js')}}"></script>
+<body>
+<div>
+    <div class="b-head">
+        <!-- <img  class="h-img" alt="" src="img/logo.png" width=80; height=60;/> -->
+        <span class="h_span">&nbsp;&nbsp;&nbsp;AI Conversation</span>
+    </div>
+    <div class="b-body">
+
+    </div>
+    <div class="b-footer">
+        <input type="text" name="text" id="f-left"/>
+        <div id="btn1">图片</div>
+        <div id="btn2">发送</div>
+    </div>
+</div>
+<form id="uploadForm" enctype="multipart/form-data" >
+    <input id="upload" name="file" accept="image/*" type="file" style="display: none"/>
+</form>
+<input type="hidden" id="user_id" value={{ user_id }}>
+<input type="hidden" id="host" value={{ host }}>
+<script src="{{url_for('static',filename='js/bot.js')}}" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var body_h = $(window).height();
+	$(".b-body").height(Math.floor(body_h*0.75));
+
+
+
+
+
+</script>
+</body>
+</html>

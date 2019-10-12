@@ -1,0 +1,185 @@
+@CHARSET "UTF-8";
+    a:link {
+		color: #fff;
+		text-decoration: none;
+	}
+	a:visited {
+		text-decoration: none;
+		color: #fff;
+	}
+	a:hover {
+		text-decoration: none;
+		color: #fff;
+	}
+	a:active {
+		text-decoration: none;
+		color: #fff;
+	}
+	
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	body {
+		font-size: 12px;
+		font-family: "微软雅黑";
+		width: 100%;
+		height: 100%;
+		background-image:url(http://area.sinaapp.com/bingImg/);
+	/*	background: url(../img/bg.jpg) no-repeat;
+		width: 100%;
+		height: 100vh;*/
+		/*background-size: cover;*/
+	}
+	
+	#top {
+		width: 100%;
+		height: 60px;
+		background: rgba(15, 25, 50, 0.3);
+		color: #fff;
+		line-height: 60px;
+		text-align: center;
+		font-size: 30px;
+	}
+
+	#box {
+		width: 800px;
+		height: 600px;
+		background: rgba(255, 255, 255, .5);
+		margin: 100px auto 0;
+	}
+
+	.b-head {
+		width: 100%;
+		height: 60px;
+		background-color:rgba(0, 0, 0, .8);
+	}
+	
+/*	.h-img {
+		margin: 0 20px;
+		float: left;
+		user-select: none;
+	}*/
+	
+	.h_span {
+		color: #fff;
+		font-size: 25px;
+		line-height: 60px;
+		float: left;
+		user-select: none;
+		cursor: default;
+	}
+
+	.b-body {
+		width: 100%;
+		/*height:auto !important;*/
+		height:80%;
+		/*min-height:400px;*/
+		overflow: auto;
+		margin: 20px 0;
+	}
+	
+	.rotWord,.mWord{
+		width: 100%;
+		margin-top: 10px;
+		overflow: hidden;
+	}
+	
+	.rotWord span {
+		height: 40px;
+		width: 40px;
+		margin-left: 20px;
+		float: left;
+	}
+	
+	.rotWord p {
+		word-break: break-all;
+		top: 4px;
+		float: left;
+		color: #fff;
+		font-size: 14px;
+		margin-left: 10px;
+		padding: 10px;
+		line-height: 24px;
+		background: rgba(0, 0, 255, .5);
+		border-radius: 6px;
+		max-width: 220px;
+	}
+	
+	.mWord span {
+		height: 40px;
+		width: 40px;
+		float: right;
+		margin-right: 20px;
+	}
+	
+	.mWord p {
+		word-break: break-all;
+		top: 2px;
+		float: right;
+		color: #fff;
+		font-size: 14px;
+		margin-right: 10px;
+		padding: 10px;
+		line-height: 24px;
+		background: #19b955;
+		border-radius: 6px;
+		max-width: 220px;
+		background: rgba(25,185,85, 0.9);
+	}
+	
+	.b-footer {
+		width: 95%;
+		height: 60px;
+		/*margin-right: 20px;*/
+		/*margin-left:20px;*/
+		margin: 0 20px;
+		font-size: 16px;
+		color: #666;
+		position:absolute;
+		bottom:2%;
+	}
+	
+	#f-left {
+		padding-left: 20px;
+		outline: none;
+		overflow: hidden;
+		width: 75%;
+		height: 60px;
+		float: left;
+		background: rgba(211, 211, 211, .5);
+		font-size: 18px;
+		border: none;
+		border-radius: 5px;
+	}
+	
+	#btn1  {
+		width: 7%;
+		height: 60px;
+		background: #666666;
+		float: left;
+		cursor: pointer;
+		text-align: center;
+		line-height: 60px;
+		font-size: 20%;
+		margin-left: 1%;
+		color: #fff;
+		user-select: none;
+		border-radius: 10px;
+	}
+
+	#btn2 {
+		width: 7%;
+		height: 60px;
+		background: #666666;
+		float: left;
+		cursor: pointer;
+		text-align: center;
+		line-height: 60px;
+		font-size: 20%;
+		margin-left: 1%;
+		color: #fff;
+		user-select: none;
+		border-radius: 10px;
+	}
